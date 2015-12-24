@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_login"
+            android:title="Login" />
+        <item android:id="@+id/nav_register"
+            android:title="Register " />
+        <item android:id="@+id/nav_search"
+            android:title="Search" />
+        <!--<item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <item android:title="About us">
+        <menu>
+            <item android:id="@+id/nav_weare"
+                android:title="Who we are" />
+            <item android:id="@+id/nav_contact"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+</menu>
+
+    <!--android:icon="@android:drawable/ic_menu_camera"-->
+    <!--android:icon="@drawable/login1"-->

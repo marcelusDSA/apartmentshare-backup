@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Apartment Share</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+    <STYLE TYPE="text/css">
+    
+   
+    </STYLE>
+	</head>
+	<body>
+ 
+
+<div class="navbar navbar-default">
+  <div class="container-fluid">
+    
+     <a class="navbar-brand" href="micuenta.html">Mi Cuenta</a>
+    <ul class="nav navbar-nav">
+      <li><a href="indexusuario.html">Busca tu habitación</a></li>
+      <li class="active"><a href="crearpiso.html">Crear Piso/Vivienda</a></li>
+      <li><a href="crearhabitacion.html">Crear Habitación</a></li>
+    </ul>
+
+      
+    <div class="navbar-collapse collapse" id="navbar">
+      
+        <form class="navbar-form navbar-right">
+           
+          <button class="btn btn-danger" href="#" type="submit">Logout</button>
+
+        </form>
+        </div>
+  </div>
+</div>
+
+ <div align="center">
+      <img src="imagenes/apartmentshare.png" alt="ApartmentShare">
+ </div>
+   
+
+<div class="container">
+  <div style="padding:10px">
+
+  <hr>
+  
+  <div class="jumbotron text-left">
+    <h2>Crea el piso a partir del cual realizar el anuncio</h2>
+    
+    <div class="form-group">
+        <label for="address">Dirección completa del piso</label>
+        <input name="address" class="form-control" id="address" type="text">
+    </div> 
+
+    <div class="form-group">
+        <label for="personas">Numero de personas alojadas actualmente en el piso</label>
+        <select  style="width:10% !important" name="personas" class="form-control" id="personas">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>   
+                      <option value="5">5</option>
+                      <option value="6">6</option>   
+                      <option value="7">7</option>
+                      <option value="8">8</option>   
+                      <option value="9">9</option>
+                      <option value="10">10</option>                      
+        </select>
+    </div>
+
+    <div class="form-group ">
+        <label for="fumadores">¿Se admiten fumadores?</label>
+        <select style="width:10% !important" name="fumadores" class="form-control" id="fumadores">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>                   
+        </select>
+   </div>
+
+   <div class="form-group ">
+        <label for="mascotas">¿Se admiten mascotas?</label>
+        <select style="width:10% !important" name="mascotas" class="form-control" id="mascotas">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>                   
+        </select>
+   </div>
+
+   <div class="form-group">
+        <label for="amueblado">¿El piso está amueblado?</label>
+        <select style="width:10% !important" name="amueblado" class="form-control" id="amueblado">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>                   
+        </select>
+   </div>
+
+    <div class="form-group">
+        <label for="bano">Numero de cuartos de baño del piso</label>
+        <select style="width:10% !important" name="bano" class="form-control" id="bano">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>   
+                      <option value="5">5</option>                    
+        </select>
+    </div>
+
+     <div class="form-group">
+       <label for="sexo">Restricción de sexo</label>
+       <select style="width:30% !important" name="sexo" class="form-control" id="sexo" required="">
+       
+                      <option value="1">Solo se admiten hombres</option>
+                      <option value="2">Solo se admiten mujeres</option>
+                      <option value="2">Indiferente</option>               
+      </select>
+    </div>
+
+    <div class="form-group">
+        <label for="metros">Número de metros cuadrados del piso</label>
+        <input  style="width:20% !important"  name="metros" class="form-control" id="metros" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="ascensor">¿Tiene acceso a un ascensor?</label>
+        <select style="width:10% !important" name="ascensor" class="form-control" id="ascensor">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>                   
+        </select>
+   </div> 
+   <div class="form-group">
+        <label for="internet">¿Tiene acceso a Internet?</label>
+        <select style="width:10% !important" name="internet" class="form-control" id="internet">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>                   
+        </select>
+   </div>
+
+ <div class="form-group">
+        <label for="estancia">Numero de personas alojadas actualmente en el piso</label>
+        <select style="width:20% !important" name="estancia" class="form-control" id="estancia">
+                      <option value="1">1 mes</option>
+                      <option value="2">2 meses</option>
+                      <option value="3">3 meses</option>
+                      <option value="4">4 meses</option>   
+                      <option value="5">5 meses</option>
+                      <option value="6">6 meses</option>   
+                      <option value="7">7 meses</option>
+                      <option value="8">8 meses</option>   
+                      <option value="9">9 meses</option>
+                      <option value="10">10 meses</option>
+                      <option value="11">11 meses</option> 
+                      <option value="12">1 año o más</option>                       
+        </select>
+    </div>
+     <div class="form-group">
+        <label for="fianza">Indique la fianza que se debe depositar (en €)</label>
+        <input style="width:10% !important" name="fianza" class="form-control" id="fianza" type="text">
+    </div>
+
+    <form name="imagen" method="post" enctype="multipart/form-data">
+      <label for="foto">Añade imagenes del piso (si hay más de una, selecciónalas todas a la vez)</label>
+      <input name="foto" type="file" multiple="true">
+    </form>
+
+
+      
+    <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea name="description" class="form-control" id="description" rows="8"></textarea>
+    </div>   
+    <br>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="800" height="400" src="https://maps.google.com/maps?hl=en&q=eetac&ie=UTF8&t=m&z=15&iwloc=B&output=embed"></iframe>
+<br>
+
+
+      <a class="btn btn-large btn-danger" href="indexusuario.html" style="float:left;" type="submit">Cancelar</a>
+      <button class="btn btn-large btn-primary" style="float:right;" type="submit">Crear</button>
+    
+  </div>
+  </div>
+  </div>
+ <!-- /container -->
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

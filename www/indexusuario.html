@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Apartment Share</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+    <STYLE TYPE="text/css">
+    body{
+      background: url(5.gif) no-repeat center bottom;
+      }
+   
+    </STYLE>
+	</head>
+	<body>
+ 
+
+<div class="navbar navbar-default">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="micuenta.html">Mi Cuenta</a>
+     <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Busca tu habitación</a></li>
+      <li><a href="crearpiso.html">Crear Piso/Vivienda</a></li>
+      <li><a href="crearhabitacion.html">Crear Habitación</a></li>
+    </ul>
+    
+    <div class="navbar-collapse collapse" id="navbar">
+          <form class="navbar-form navbar-right">
+           
+            <button class="btn btn-danger" href="#" type="submit">Logout</button>
+
+          </form>
+        </div>
+  </div>
+</div>
+
+<center>
+      <a title="ApartmentShare" href="indexusuario.html"><img src="imagenes/logocompleto500.png" alt="ApartmentShare" /></a>
+</center>   
+
+<div class="container">
+  <div style="padding:10px">
+
+  <hr>
+  
+  <div class="jumbotron text-center col-sm-12 col-sm-offset-1 col-md-10 col-md-offset-1">
+    <h2>Buscar habitaciones</h2>
+    <p class="lead">Indícanos tus preferencias y nosotros buscamos lo mejor para ti.</p>
+   
+      <div class="form-group col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3">
+          <label for="campus">Campus deseado</label>
+         
+          <select name="campus" class="form-control" id="campus" required="">
+            <option value="0">- Debes seleccionar un campus -</option>
+                          <option value="1">UPC EETAC, Castelldefels</option>
+                          <option value="2">UPC Campus Nord, Barcelona</option>
+                          <option value="3">Universitat Oberta de Catalunya, Bellaterra</option>
+                          <option value="4">UB, Barcelona</option>
+          </select>
+
+      </div>
+
+       <div class="form-group col-sm-9 col-sm-offset-3 col-sm-6 col-sm-offset-3">
+       <label for="sexo">Indica tu sexo</label>
+       <select name="sexo" class="form-control" id="sexo" required="">
+       
+                      <option value="1">Hombre</option>
+                      <option value="2">Mujer</option>
+                      
+      </select>
+      </div>
+      <div class="form-group col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3">
+        <label for="fumador">¿Eres fumador?</label>
+        <select name="fumador" class="form-control" id="fumador">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>                   
+        </select>
+       </div>
+       <div class="form-group col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3">
+       <label for="mascota">¿Llevarás una mascota?</label>
+       <select name="campus" class="form-control" style="float:center;" id="campus" required="">
+       
+                      <option value="1">Si</option>
+                      <option value="2">No</option>
+      </select>
+      </div>
+
+       <div class="form-group col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3">
+       <label for="amueblada">¿La quieres amueblada?</label>
+       <select name="amueblada" class="form-control" id="amueblada" required="">
+       
+                      <option value="1">Si</option>
+                      <option value="2">No</option>
+                       <option value="2">Me es indiferente</option>
+      </select>
+      </div>
+
+       <div class="form-group col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3">
+       <label for="ascensor">¿Debe tener ascensor?</label>
+       <select name="ascensor" class="form-control" id="ascensor" required="">
+       
+                      <option value="1">Si</option>
+                      <option value="2">No</option>
+                       <option value="2">Me es indiferente</option>
+      </select>
+      </div>
+      <div class="form-group col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3">
+       <label for="internet">¿Con acceso a Internet?</label>
+       <select name="internet" class="form-control" id="internet" required="">
+       
+                      <option value="1">Si</option>
+                      <option value="2">No</option>
+                       <option value="2">Me es indiferente</option>
+      </select>
+      </div>
+       <br>
+
+      <button class="btn btn-large btn-primary col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3" style="float:center;" type="submit">BUSCAR</button>
+    </form>
+  </div>
+  </div>
+  </div>
+ <!-- /container -->
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
