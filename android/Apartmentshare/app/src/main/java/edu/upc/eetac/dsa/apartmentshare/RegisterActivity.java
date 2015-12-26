@@ -226,7 +226,7 @@ public class RegisterActivity extends AppCompatActivity {
             showProgress(false);
 
             if (success) {
-                startActivity(new Intent(RegisterActivity.this,FlatsListActivity.class));
+                startActivity(new Intent(RegisterActivity.this,HomeActivity.class));
 //               finish();
             } else {
 

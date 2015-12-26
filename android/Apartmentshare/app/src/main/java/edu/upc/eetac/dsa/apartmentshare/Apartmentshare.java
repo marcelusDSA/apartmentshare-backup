@@ -119,11 +119,6 @@ public class Apartmentshare extends AppCompatActivity implements NavigationView.
              startActivity(new Intent(Apartmentshare.this, RegisterActivity.class));
 
 
-
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-
         } else if (id == R.id.nav_weare) {
 
 
