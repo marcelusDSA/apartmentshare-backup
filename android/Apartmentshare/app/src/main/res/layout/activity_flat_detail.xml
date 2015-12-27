@@ -62,7 +62,9 @@
             android:layout_marginBottom="124dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button_my_room"
+            android:layout_alignEnd="@+id/button_my_room" />
 
         <Button
             android:layout_width="wrap_content"

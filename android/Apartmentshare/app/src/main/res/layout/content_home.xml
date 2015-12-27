@@ -21,7 +21,8 @@
             android:layout_width="327dp"
             android:layout_height="95dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Welcome  to Apartmentshare, now you can make you ads to rent rooms "
+            android:text="Welcome  to Apartmentshare
+                                    now you can make you ads to rent rooms "
             android:id="@+id/textView"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"

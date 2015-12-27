@@ -40,13 +40,13 @@ public class HomeActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-//        Button mAddapartmentButton = (Button) findViewById(R.id.button_my_room);
-//        mAddapartmentButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(HomeActivity.this, FlatsListActivity.class));
-//            }
-//        });
+        Button mAddapartmentButton = (Button) findViewById(R.id.button_my_apartments);
+        mAddapartmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, FlatsListActivity.class));
+            }
+        });
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
