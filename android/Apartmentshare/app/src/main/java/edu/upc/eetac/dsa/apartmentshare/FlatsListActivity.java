@@ -76,6 +76,7 @@ public class FlatsListActivity extends AppCompatActivity {
     class GetStingsTask extends AsyncTask<Void, Void, String> {
         private String  uri;
 
+
 //                =  getIntent().getExtras().getString("uri");
 
         public GetStingsTask(String uri) {

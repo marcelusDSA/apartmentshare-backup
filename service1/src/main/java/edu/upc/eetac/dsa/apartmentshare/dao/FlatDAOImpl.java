@@ -102,7 +102,7 @@ public class FlatDAOImpl implements FlatDAO {
     }
 
     @Override
-    public FlatCollection getFlats(String userid, long timestamp, boolean before) throws SQLException {
+    public FlatCollection getFlats(long timestamp, boolean before) throws SQLException {
         FlatCollection flatCollection = new FlatCollection();
 
         Connection connection = null;
@@ -115,7 +115,6 @@ public class FlatDAOImpl implements FlatDAO {
             else
                 stmt = connection.prepareStatement(FlatDAOQuery.GET_FLATS_AFTER);
             stmt.setTimestamp(1, new Timestamp(timestamp));
-            stmt.setString(2, userid);
 
             ResultSet rs = stmt.executeQuery();
             boolean first = true;
@@ -180,10 +179,10 @@ public class FlatDAOImpl implements FlatDAO {
             stmt.setInt(11, numbathrooms);
             stmt.setInt(12,elevator);
             stmt.setInt(13,plantnum);
-            stmt.setInt(14,internet);
-            stmt.setInt(15,fianza);
-            stmt.setInt(16, estancia);
-            stmt.setString(17, id);
+            stmt.setInt(13,internet);
+            stmt.setInt(14,fianza);
+            stmt.setInt(15, estancia);
+            stmt.setString(16, id);
 
             int rows = stmt.executeUpdate();
             if (rows == 1)

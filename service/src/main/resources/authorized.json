@@ -12,23 +12,20 @@
     "methods": ["GET"]
   },
   {
-    "path": "(?i)flat/([0-9a-f]{32})?",
-    "methods": ["GET"]
-  },
-  {
-    "path": "users",
-    "methods": ["DELETE"]
-  },
-  {
     "path": "login",
     "methods": ["POST"]
   },
   {
-    "path": "flat",
-    "methods": ["POST"]
+    "path": "(?i)room/([0-9a-f]{32})?",
+    "methods": ["GET"]
   },
   {
-    "path": "flat",
+    "path": "(?i)flat/([0-9a-f]{32})?",
+    "methods": ["GET"]
+  },
+  {
+    "path": "(?i)flat/([0-9a-f]{32})?/listflat",
     "methods": ["GET"]
   }
+
 ]

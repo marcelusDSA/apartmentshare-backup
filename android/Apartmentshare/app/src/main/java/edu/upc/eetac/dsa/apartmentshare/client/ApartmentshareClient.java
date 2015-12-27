@@ -116,9 +116,32 @@ public class ApartmentshareClient {
 public String getFlats(String uri) throws ApartmentshareClientException {
     if(uri==null){
 //           uri = getLink(authToken.getLinks(), "current-flat").getUri().toString();
+//        uri= getLink(authToken.getLinks(),"current-flat").getUri().toString();
         uri= getLink(authToken.getLinks(),"current-flat").getUri().toString();
 
+        String uri2;
+
+//        uri2= uri + "/BF30F75EA8B511E5A08B1C3E847FCC35";
+        uri2= uri + "/"+authToken.getUserid()+"/listflat";
+
+        uri= uri2;
+
+
+//        uri="http://localhost:8080/apartmentshare/flat/BF30F75EA8B511E5A08B1C3E847FCC35";
+        Log.d(TAG, authToken.getUserid());
+        Log.d(TAG, uri2);
+
+
         }
+        WebTarget target = client.target(uri);
+        Response response = target.request().get();
+//        if (response.getStatus() == Response.Status.OK.getStatusCode())
+            return response.readEntity(String.class);
+//        else
+//            throw new ApartmentshareClientException(response.readEntity(String.class));
+    }
+
+    public String getFlat(String uri) throws ApartmentshareClientException {
         WebTarget target = client.target(uri);
         Response response = target.request().get();
         if (response.getStatus() == Response.Status.OK.getStatusCode())
@@ -126,6 +149,4 @@ public String getFlats(String uri) throws ApartmentshareClientException {
         else
             throw new ApartmentshareClientException(response.readEntity(String.class));
     }
-
-
 }

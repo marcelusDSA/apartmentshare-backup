@@ -50,8 +50,11 @@
                 android:layout_height="wrap_content"
                 android:text="Add your apartment"
                 android:id="@+id/button_add_your_apartment"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentTop="true" />
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/button_my_apartments"
+                android:layout_alignStart="@+id/button_my_apartments"
+                android:layout_alignRight="@+id/button_my_apartments"
+                android:layout_alignEnd="@+id/button_my_apartments" />
 
             <Button
                 android:layout_width="wrap_content"

@@ -17,11 +17,12 @@ public class AuthToken {
 
     @InjectLinks({
             @InjectLink(resource = ApartmentshareRootAPIResource.class, style = InjectLink.Style.ABSOLUTE, rel = "self bookmark home", title = "Apartmentsahre Root API"),
-            @InjectLink(resource = LoginResource.class, style = InjectLink.Style.ABSOLUTE, rel = "login", title = "Login", type = ApartmentshareMediaType.APARTMENTSHARE_AUTH_TOKEN),
+            @InjectLink(resource = LoginResource.class, style = InjectLink.Style.ABSOLUTE, rel = "self login", title = "Login", type = ApartmentshareMediaType.APARTMENTSHARE_AUTH_TOKEN),
             @InjectLink(resource = LoginResource.class, style = InjectLink.Style.ABSOLUTE, rel = "logout", title = "Logout"),
             @InjectLink(resource = UserResource.class, method = "getUser", style = InjectLink.Style.ABSOLUTE, rel = "user-profile", title = "User profile", type= ApartmentshareMediaType.APARTMENTSHARE_USER, bindings = @Binding(name = "id", value = "${instance.userid}")),
             @InjectLink(resource = FlatResource.class, style = InjectLink.Style.ABSOLUTE, rel = "create-flat", title = "Create flat", type=ApartmentshareMediaType.APARTMENTSHARE_FLAT),
             @InjectLink(resource = FlatResource.class, style = InjectLink.Style.ABSOLUTE, rel = "current-flat", title = "Current flat", type= ApartmentshareMediaType.APARTMENTSHARE_FLAT_COLLECTION),
+
     })
 
     private List<Link> links;
